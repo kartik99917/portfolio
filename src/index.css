@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #0f0f0f;
+    color: #e5e5e5;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #0f0f0f;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #2a2a2a;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #4a6fa5;
+  }
+
+  ::selection {
+    background-color: #4a6fa540;
+    color: #e5e5e5;
+  }
+}
+
+@layer components {
+  .section-wrapper {
+    @apply max-w-6xl mx-auto px-6 py-24 lg:px-12;
+  }
+
+  .section-label {
+    @apply text-accent text-xs font-display tracking-[0.14em] uppercase mb-3;
+  }
+
+  .section-title {
+    @apply font-display text-3xl md:text-4xl font-bold text-text-primary mb-12 leading-tight;
+  }
+
+  .card {
+    @apply bg-bg-secondary border border-border rounded-xl p-6 transition-all duration-300;
+  }
+
+  .card:hover {
+    @apply border-border-light;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+  }
+
+  .btn-primary {
+    @apply bg-accent text-white font-display font-semibold text-sm tracking-wider px-7 py-3 rounded-lg transition-all duration-200 inline-block;
+  }
+
+  .btn-primary:hover {
+    @apply bg-accent-light;
+    transform: translateY(-1px);
+  }
+
+  .btn-outline {
+    @apply border border-border-light text-text-primary font-display font-medium text-sm tracking-wider px-7 py-3 rounded-lg transition-all duration-200 inline-block;
+  }
+
+  .btn-outline:hover {
+    @apply border-accent text-accent;
+    transform: translateY(-1px);
+  }
+
+  .tag {
+    @apply text-xs font-body px-3 py-1 rounded-md border border-border bg-bg-tertiary text-text-secondary transition-colors duration-200;
+  }
+
+  .tag:hover {
+    @apply border-accent text-text-primary;
+  }
+}
