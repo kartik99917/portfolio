@@ -34,9 +34,7 @@ npm run build
 ```
 
 Output goes to `dist/`. Deploy this folder to **Netlify**, **Vercel**, or **GitHub Pages**.
-
 ---
-
 ## Customization
 
 All personal content lives in one file:
