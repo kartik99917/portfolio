@@ -1,6 +1,6 @@
 # Kartik Gawade — Portfolio
 
-A clean, minimal frontend developer portfolio built with React + Vite + Tailwind CSS + Framer Motion.  CLEAN
+A clean, minimal frontend developer portfolio built with React + Vite + Tailwind CSS + Framer Motion. 
 
 ## Tech Stack
 
