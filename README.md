@@ -2,7 +2,8 @@
 
 A clean, minimal frontend developer portfolio built with React + Vite + Tailwind CSS + Framer Motion. 
 
-## Tech Stac
+## Tech Stack
+
 - **React 18** — UI components
 - **Vite 5** — dev server & bundler
 - **Tailwind CSS 3** — utility-first styling
